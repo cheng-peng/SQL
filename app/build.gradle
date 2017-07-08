@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.cxp.sql"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+
+    compile 'org.greenrobot:greendao:3.1.1'
+
+    // Stetho core
+    compile 'com.facebook.stetho:stetho:1.4.1'
+    //编辑数据库
+    //使用方法：手机要和电脑在同一wifi下，然后运行程序后，打开http://XXX.XXX.X.XXX:8080    XXX就是你手机号的IP  在设置->关于手机->状态消息里有IP   (可能有点慢)
+    debugCompile 'com.amitshekhar.android:debug-db:1.0.1'
+}

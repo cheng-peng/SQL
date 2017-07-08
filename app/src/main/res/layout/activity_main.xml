@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_add_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickLis"
+                android:text="增加一条数据" />
+
+            <Button
+                android:id="@+id/bt_add_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickLis"
+                android:text="增加多条数据" />
+
+            <Button
+                android:id="@+id/bt_delete_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickLis"
+                android:text="删除一条数据" />
+
+
+            <Button
+                android:id="@+id/bt_delete_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickLis"
+                android:text="删除全部数据" />
+
+            <Button
+                android:id="@+id/bt_update_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickLis"
+                android:text="修改一条数据" />
+
+
+            <Button
+                android:id="@+id/bt_update_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickLis"
+                android:text="修改多条数据" />
+
+            <Button
+                android:id="@+id/bt_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickLis"
+                android:text="查询数据" />
+
+            <Button
+                android:id="@+id/bt_query_param"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickLis"
+                android:text="条件查询数据" />
+
+            <Button
+                android:id="@+id/bt_query_param_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickLis"
+                android:text="多条件查询数据" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
